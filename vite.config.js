@@ -1,9 +1,8 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  publicDir: "public",
-  base: '/Client/',
+  publicDir: 'public',
+  base: '/Client/',  // This is correct if your GitHub Pages repo is 'Client'
 });
